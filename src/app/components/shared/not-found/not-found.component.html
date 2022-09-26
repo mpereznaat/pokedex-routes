@@ -1,0 +1,18 @@
+<p>not-found works!</p>
+
+<ul>
+    <li>
+        <a routerLink="/auth">
+            Ir a Login
+        </a>
+    </li>
+    <li routerLink="/authLazy/login">
+        Ir a Login Lazy
+    </li>
+    <li *ngFor="let item of [1,2,3]">
+        <button [routerLink]="'/authLazy/enroll/' + item">
+            Ir a Registro {{ item }}
+        </button>
+    </li>
+
+</ul>
