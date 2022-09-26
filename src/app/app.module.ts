@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './components/shared/not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { NotFoundComponent } from './components/shared/not-found/not-found.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,    
+    AppRoutingModule, 
+    HttpClientModule   
   ],
   providers: [],
   bootstrap: [AppComponent]

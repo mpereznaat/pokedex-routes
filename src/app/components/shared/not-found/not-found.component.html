@@ -1,18 +1,53 @@
 <p>not-found works!</p>
 
 <ul>
+    <li routerLink="/authLazy/login">
+        Ir a Login
+    </li>
+    <li routerLink="/authLazy/enroll">
+        Ir a Registro
+    </li>
     <li>
-        <a routerLink="/auth">
-            Ir a Login
+        <a routerLink="/pokedex">
+            Pokedex
         </a>
     </li>
-    <li routerLink="/authLazy/login">
-        Ir a Login Lazy
+    <li>
+        <a routerLink="/pokedex/add">
+            Agregar
+        </a>
     </li>
-    <li *ngFor="let item of [1,2,3]">
-        <button [routerLink]="'/authLazy/enroll/' + item">
-            Ir a Registro {{ item }}
-        </button>
+    <li>
+        <a routerLink="/pokedex/edit/1">
+            Editar
+        </a>
     </li>
-
+    <li>
+        <a routerLink="/pokedex/find">
+            Buscar
+        </a>
+    </li>
+    <li>
+        <a routerLink="/pokedex/list">
+            Lista
+        </a>
+    </li>
+    <li>
+        <a routerLink="/pokedex/pokemon/2">
+            Pokemón
+        </a>
+    </li>
 </ul>
+
+<br>
+<button (click)="login()">
+    Login
+</button>
+<br>
+<br>
+<button (click)="logout()">
+    Logout
+</button>
+<p>
+    {{ showSession() }}
+</p>

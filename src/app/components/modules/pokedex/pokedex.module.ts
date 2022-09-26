@@ -5,6 +5,7 @@ import { AddComponent } from './pages/add/add.component';
 import { FindComponent } from './pages/find/find.component';
 import { PokemonComponent } from './pages/pokemon/pokemon.component';
 import { PokedexComponent } from './pages/pokedex/pokedex.component';
+import { PokedexRoutingModule } from './pokedex-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PokedexComponent } from './pages/pokedex/pokedex.component';
     PokedexComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PokedexRoutingModule
   ]
 })
 export class PokedexModule { }
